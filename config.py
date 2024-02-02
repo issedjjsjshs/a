@@ -19,9 +19,9 @@ START_IMG = getenv("START_IMG", "https://telegra.ph/file/d7a8ab813482cc2b045f4.p
 SESSION = getenv("SESSION", None)
 
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/SourceTeo")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BDthon")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/SourceTeo")
 
-SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6755634224").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "6897384143").split()))
 
 
 FAILED = "https://telegra.ph/file/d7a8ab813482cc2b045f4.png"
