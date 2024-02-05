@@ -11,7 +11,7 @@ from youtube_search import YoutubeSearch
 from ShahmMusic import BOT_MENTION, BOT_USERNAME, LOGGER, app
 
 
-@app.on_message(filters.command(["song", "vsong", "video", "music"]) | filters.command(["بحث","تنزيل","نزل"],prefixes= ["/", "!","","#"]))
+@app.on_message(filters.command(["song", "vsong", "video", "music"]) | filters.command(["يوت","تنزيل","نزل"],prefixes= ["/", "!","","#"]))
 async def song(_, message: Message):
     try:
         await message.delete()
