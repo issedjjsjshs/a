@@ -6,7 +6,7 @@ from youtube_search import YoutubeSearch
 from ShahmMusic import app
 
 
-@app.on_message(filters.command(["search"]) | filters.command(["بحث","يوت"],prefixes= ["/", "!","","#"]))
+@app.on_message(filters.command(["search"]) | filters.command(["ابحث","يوت"],prefixes= ["/", "!","","#"]))
 async def ytsearch(_, message: Message):
     try:
         await message.delete()
