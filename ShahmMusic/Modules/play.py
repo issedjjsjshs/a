@@ -44,7 +44,7 @@ from ShahmMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    Shahm = await message.reply_text("** جاري التشغيل...**")
+    Shahm = await message.reply_text("** 🎶 **")
     try:
         await message.delete()
     except:
