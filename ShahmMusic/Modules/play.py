@@ -44,7 +44,7 @@ from ShahmMusic.Helpers.thumbnails import gen_qthumb, gen_thumb
     & ~filters.via_bot
 )
 async def play(_, message: Message):
-    Shahm = await message.reply_text("** 🎶 **")
+    Shahm = await message.reply_text("** 🎵 **")
     try:
         await message.delete()
     except:
@@ -157,7 +157,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await Shahm.edit_text("⌔︙ اكتب اسم الاغنية 🎧")
-        await Shahm.edit_text("**🎶**")
+        await Shahm.edit_text("** 🎵 **")
         query = message.text.split(None, 1)[1]
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
