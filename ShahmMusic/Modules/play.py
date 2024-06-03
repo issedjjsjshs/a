@@ -234,3 +234,22 @@ async def play(_, message: Message):
         )
 
     return await Shahm.delete()
+
+        key = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="اقفل",
+                        callback_data=f"forceclose abc|{message.from_user.id}",
+                    ),
+                ]
+            ]
+        )
+        await m.edit_text(
+            text=text,
+            reply_markup=key,
+            disable_web_page_preview=True,
+        )
+    except Exception as e:
+        await message.reply_text(str(e))
+
